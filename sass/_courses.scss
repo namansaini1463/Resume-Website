@@ -1,0 +1,29 @@
+.section__courses-undertaken {
+    font-size: 1.6rem;
+    line-height: 1.6;
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 1.4rem;
+    }
+
+    ul {
+        :not(:last-child) {
+            margin-bottom: 1.4rem;
+        }
+    }
+
+    .wrapper__courses {
+        display: flex;
+        justify-content: space-between;
+
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+
+            em {
+                width: fit-content;
+                align-self: flex-end;
+                margin-top: -2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.heading-1 {
+    font-size: 3rem;
+    letter-spacing: 0.5px;
+}
+
+.mb-lg {
+    margin-bottom: 5rem;
+}
+
+.mb-md {
+    margin-bottom: 0.6rem;
+}
+
+.mb-large {
+    margin-bottom: 1.5rem;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.text-italics {
+    font-style: italic;
+}
+
+$bp-largest: 93.75em;
+$bp-large: 68.75em;
+$bp-medium: 53.125em;
+$bp-small: 43.75em;
+$bp-smallest: 37.5em;
+$bp-very-small: 28.125em;

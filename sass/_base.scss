@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-very-small) {
+        font-size: 45%;
+    }
+}
+
+body {
+    font-family: "Merriweather", serif;
+    color: #27272a;
+}
+
+.container {
+    margin: 8rem 18rem;
+    padding: 4rem 8rem;
+    background-color: #f8fafc;
+
+    @media only screen and (max-width: $bp-largest) {
+        margin: 4rem 10rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        margin: 2rem 4rem;
+        padding: 3rem 6rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        margin: 0;
+        padding: 5rem 6rem;
+    }
+}

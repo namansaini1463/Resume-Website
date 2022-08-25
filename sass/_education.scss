@@ -1,0 +1,43 @@
+.section__education {
+    font-size: 1.6rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 1.4rem;
+    }
+
+    ul {
+        :not(:last-child) {
+            margin-bottom: 1.4rem;
+        }
+    }
+
+    .wrapper__li {
+        display: grid;
+        grid-template-columns:
+            5fr
+            80fr
+            minmax(20fr, min-content);
+
+        .institute__name {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+        }
+
+        .institute__location {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            justify-self: end;
+
+            @media only screen and (max-width: $bp-very-small) {
+                font-size: 1.2rem;
+            }
+        }
+        .institute__duration {
+            justify-self: end;
+
+            @media only screen and (max-width: $bp-very-small) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

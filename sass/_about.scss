@@ -1,0 +1,72 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    &__text {
+        font-weight: normal;
+        color: #9ca3af;
+        margin-top: -0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .img-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 2.5rem;
+
+        @media only screen and (max-width: $bp-smallest) {
+            margin-bottom: 3rem;
+        }
+    }
+    .resume-photo {
+        height: 8rem;
+        width: 8rem;
+        border-radius: 50%;
+    }
+
+    .wrapper__about {
+        display: flex;
+        @media only screen and (max-width: $bp-smallest) {
+            flex-direction: column;
+        }
+    }
+
+    .linkedin-link,
+    .github-link,
+    .email,
+    .mobile-number {
+        font-weight: 700;
+    }
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: currentColor;
+        font-weight: 400;
+    }
+
+    a:hover,
+    a:active {
+        text-decoration: underline;
+        color: #0891b2;
+    }
+
+    .contact-details {
+        align-self: flex-end;
+        width: fit-content;
+        @media only screen and (max-width: $bp-smallest) {
+            margin-top: -2.4rem;
+            align-self: flex-start;
+        }
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        flex-direction: column;
+    }
+}

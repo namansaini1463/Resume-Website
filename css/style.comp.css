@@ -1,0 +1,163 @@
+.heading-1 {
+  font-size: 3rem;
+  letter-spacing: 0.5px; }
+
+.mb-lg {
+  margin-bottom: 5rem; }
+
+.mb-md {
+  margin-bottom: 0.6rem; }
+
+.mb-large {
+  margin-bottom: 1.5rem; }
+
+.text-bold {
+  font-weight: 700; }
+
+.text-italics {
+  font-style: italic; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 28.125em) {
+    html {
+      font-size: 45%; } }
+
+body {
+  font-family: "Merriweather", serif;
+  color: #27272a; }
+
+.container {
+  margin: 8rem 18rem;
+  padding: 4rem 8rem;
+  background-color: #f8fafc; }
+  @media only screen and (max-width: 93.75em) {
+    .container {
+      margin: 4rem 10rem; } }
+  @media only screen and (max-width: 53.125em) {
+    .container {
+      margin: 2rem 4rem;
+      padding: 3rem 6rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .container {
+      margin: 0;
+      padding: 5rem 6rem; } }
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem; }
+  .about p {
+    font-size: 1.4rem; }
+  .about__text {
+    font-weight: normal;
+    color: #9ca3af;
+    margin-top: -0.8rem;
+    margin-bottom: 1rem; }
+  .about .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .about .img-container {
+        margin-bottom: 3rem; } }
+  .about .resume-photo {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%; }
+  .about .wrapper__about {
+    display: flex; }
+    @media only screen and (max-width: 37.5em) {
+      .about .wrapper__about {
+        flex-direction: column; } }
+  .about .linkedin-link,
+  .about .github-link,
+  .about .email,
+  .about .mobile-number {
+    font-weight: 700; }
+  .about a:link,
+  .about a:visited {
+    text-decoration: none;
+    color: currentColor;
+    font-weight: 400; }
+  .about a:hover,
+  .about a:active {
+    text-decoration: underline;
+    color: #0891b2; }
+  .about .contact-details {
+    align-self: flex-end;
+    width: fit-content; }
+    @media only screen and (max-width: 37.5em) {
+      .about .contact-details {
+        margin-top: -2.4rem;
+        align-self: flex-start; } }
+  @media only screen and (max-width: 37.5em) {
+    .about {
+      flex-direction: column; } }
+
+.section__education {
+  font-size: 1.6rem; }
+  @media only screen and (max-width: 37.5em) {
+    .section__education {
+      font-size: 1.4rem; } }
+  .section__education ul :not(:last-child) {
+    margin-bottom: 1.4rem; }
+  .section__education .wrapper__li {
+    display: grid;
+    grid-template-columns: 5fr 80fr minmax(20fr, min-content); }
+    .section__education .wrapper__li .institute__name {
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1; }
+    .section__education .wrapper__li .institute__location {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      justify-self: end; }
+    .section__education .wrapper__li .institute__duration {
+      justify-self: end; }
+
+.section__skills-summary {
+  font-size: 1.6rem; }
+  .section__skills-summary ul :not(:last-child) {
+    margin-bottom: 1.4rem; }
+
+.section__courses-undertaken {
+  font-size: 1.6rem;
+  line-height: 1.6; }
+  @media only screen and (max-width: 37.5em) {
+    .section__courses-undertaken {
+      font-size: 1.4rem; } }
+  .section__courses-undertaken ul :not(:last-child) {
+    margin-bottom: 1.4rem; }
+  .section__courses-undertaken .wrapper__courses {
+    display: flex;
+    justify-content: space-between; }
+    @media only screen and (max-width: 43.75em) {
+      .section__courses-undertaken .wrapper__courses {
+        flex-direction: column; }
+        .section__courses-undertaken .wrapper__courses em {
+          width: fit-content;
+          align-self: flex-end;
+          margin-top: -2rem; } }
+
+.section__achievments-participation {
+  font-size: 1.6rem; }
+  @media only screen and (max-width: 37.5em) {
+    .section__achievments-participation {
+      font-size: 1.4rem; } }
+
+.copyright p {
+  display: block;
+  width: fit-content;
+  margin: 0 0 0 auto; }
